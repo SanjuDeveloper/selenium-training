@@ -1,10 +1,10 @@
 package core;
 
-public class StringRev {
+import java.util.*;
 
+public class StringRev extends Parent{
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println(Parent.name);
 	}
-
 }
