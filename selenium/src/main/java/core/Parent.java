@@ -1,6 +1,6 @@
 package core;
 
-
+import java.util.Arrays;
 
 public class Parent {
 	
@@ -22,5 +22,19 @@ public class Parent {
 		new Parent();
 		new Parent(20);
 	}
+	
+	public static void sortArray(int[] array) {
+		int i, j,temp;
+		for (i = 0; i < array.length; i++) {
+			for (j = 0; j < array.length - 1; j++) {
+				if (array[i] < array[j]) {
+					temp = array[i];
+					array[i] = array[j];
+					array[j] = temp;
+				}
+			}
+		}
 
+		System.out.print(Arrays.toString(array));
+	}
 }
