@@ -14,7 +14,6 @@ import org.testng.asserts.SoftAssert;
 public class BrokenLink {
 	public static void main(String[] args) throws IOException {
 		WebDriver driver = new ChromeDriver();
-		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		List<WebElement> links=driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 		SoftAssert a=new SoftAssert();
