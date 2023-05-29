@@ -13,8 +13,7 @@ public class Methods extends Tests{
 		String searchItem= "Cucumber";
 		Methods obj = new  Methods(); // Crete object of the class
 		obj.openWebSite(driver, Url);
-		obj.searchItem(driver,searchItem);
-		
+		obj.searchItem(driver,searchItem);		
 	}
 
 }

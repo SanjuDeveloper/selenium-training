@@ -15,7 +15,7 @@ public class BrokenLink {
 	public static void main(String[] args) throws IOException {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		List<WebElement> links=driver.findElements(By.cssSelector("li[class='gf-li'] a"));
+		List<WebElement> links=driver.findElements(By.xpath("//div[@class='navFooterLinkCol navAccessibility']/ul/li"));
 		SoftAssert a=new SoftAssert();
 		
 		for(WebElement link: links) {
@@ -25,7 +25,7 @@ public class BrokenLink {
 			conn.connect();
 			int resp=conn.getResponseCode();
 			a.assertEquals(resp<400,"The link with Text"+link.getText()+"is broken with code"+resp);
-			
+			System.out.println("Response Code"+resp);
 		}
 		
 		a.assertAll();
