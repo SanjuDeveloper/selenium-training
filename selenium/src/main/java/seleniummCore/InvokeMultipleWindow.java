@@ -19,8 +19,6 @@ public class InvokeMultipleWindow {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));	
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		
-		//driver.get("https://rahulshettyacademy.com/angularpractice/");
-
 		// Switching Window
 
 		driver.switchTo().newWindow(WindowType.WINDOW);
