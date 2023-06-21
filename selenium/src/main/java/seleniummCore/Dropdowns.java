@@ -21,6 +21,10 @@ public class Dropdowns {
 		driver.findElement(By.className("signInBtn")).click();
 		String errorMessage = driver.findElement(By.cssSelector("p[class='error']")).getText();
 		System.out.println(errorMessage);
+		
+		
+		
+		////input[@id(contains='Option1')
 
 	}
 
